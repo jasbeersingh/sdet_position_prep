@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+    triggers {
+	githubPush()
+    }
+    stages {
+        stage('build') {
+            steps {
+               sh 'echo " then we try to test it"'
+            }
+        }
+	
+	stage('package') {
+            steps {
+               sh 'echo " then we try to test it"'
+            }
+        }
+	
+	stage('test') {
+            steps {
+               sh 'echo " then we try to test it"'
+            }
+        }
+    }
+}
+
